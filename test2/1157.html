@@ -1,0 +1,1200 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="REFRESH" content="60">
+<title>1157</title>
+<style type="text/css">
+body {
+ background: #f0f0f5;
+}
+p,span {
+ font-family: monospace;
+}
+p {
+ margin-right: 6em;
+}
+p.phase {
+ font-weight: bold;
+ margin-bottom: 0;
+}
+p.result, p.WARNING, p.error {
+ margin-top: 0;
+ margin-bottom: 0;
+ margin-left: 5em;
+}
+span.status {
+ float: right;
+ margin-top: -1em;
+}
+.passed, .completed {
+ color: #00D000;
+}
+.WARNING, .warning {
+ color: #555500;
+}
+.FAILED, .error {
+ color: #DD0000;
+}
+</style>
+</head>
+<body>
+<h1 class="experiment">/home/an/speech_recognition/words/test1</h1>
+<h2 class="hostname">Training 1157 on an-HP-450-Notebook-PC</h2>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2019-11-22 22:35)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///home/an/speech_recognition/words/test1/logdir/000.comp_feat/1157.train-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///home/an/speech_recognition/words/test1/logdir/000.comp_feat/1157.test-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2019-11-22 22:36)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 6282 words using 40 phones</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 3.72219444444444</p>
+<p class='result'>This is a small amount of data, no comment at this time</p>
+<span class='status WARNING'>WARNING</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 6279</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<span class='status passed'>passed</span>
+<hr>
+<h3>MODULE: 0000 train grapheme-to-phoneme model	(2019-11-22 22:36)</h3>
+<p>Skipped (set $CFG_G2P_MODEL = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 01 Train LDA transformation	(2019-11-22 22:36)</h3>
+<p>Skipped (set $CFG_LDA_MLLT = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 02 Train MLLT transformation	(2019-11-22 22:36)</h3>
+<p>Skipped (set $CFG_LDA_MLLT = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 05 Vector Quantization	(2019-11-22 22:36)</h3>
+<p>Skipped for continuous models</p>
+<hr>
+<h3>MODULE: 10 Training Context Independent models for forced alignment and VTLN	(2019-11-22 22:36)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 11 Force-aligning transcripts	(2019-11-22 22:36)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 12 Force-aligning data for VTLN	(2019-11-22 22:36)</h3>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 20 Training Context Independent models	(2019-11-22 22:36)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...</span>
+<span class='progress'>models...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Flat initialize</p>
+<p class='result'>mk_mdef_gen <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.make_ci_mdef_fromphonelist.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>mk_flat <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.makeflat_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_gau <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.initmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.normmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_gau <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.initvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.normvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>cp_parm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.cpmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>cp_parm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.cpvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -152.378638929126</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -149.543541029068</p>
+<p class='result'>Convergence Ratio = 2.83509790005786</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.3-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -147.040759289815</p>
+<p class='result'>Convergence Ratio = 2.50278173925292</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.4-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -146.556128445831</p>
+<p class='result'>Convergence Ratio = 0.48463084398449</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.5-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -146.445232013099</p>
+<p class='result'>Convergence Ratio = 0.110896432732403</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.6-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -146.398664466649</p>
+<p class='result'>Training completed after 6 iterations</p>
+<hr>
+<h3>MODULE: 30 Training Context Dependent models	(2019-11-22 22:37)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Initialization</p>
+<p class='result'>mk_mdef_gen <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.make_alltriphonelist.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_mixw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.copycitocd.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for iteration: 1 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -146.372320966814</p>
+<p class='result'>Baum welch starting for iteration: 2 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.486452802167</p>
+<p class='result'>Convergence Ratio = 1.88586816464672</p>
+<p class='result'>Baum welch starting for iteration: 3 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.863815305852</p>
+<p class='result'>Convergence Ratio = 0.622637496314894</p>
+<p class='result'>Baum welch starting for iteration: 4 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.713062849595</p>
+<p class='result'>Convergence Ratio = 0.150752456257436</p>
+<p class='result'>Baum welch starting for iteration: 5 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.628208620503</p>
+<p class='result'>Training completed after 5 iterations</p>
+<hr>
+<h3>MODULE: 40 Build Trees	(2019-11-22 22:37)</h3>
+<p class='phase'>Phase 1: Cleaning up old log files...</p>
+<p class='phase'>Phase 2: Make Questions</p>
+<p class='result'>make_quests <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.make_questions.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Tree building</p>
+<p class='result'>Processing each phone with each state</p>
+<p class='result'>AA 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AA.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AA 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AA.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AA 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AA.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>F 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.F.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>F 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.F.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>F 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.F.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>M 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.M.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>M 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.M.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>M 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.M.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>JH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.JH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>JH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.JH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>JH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.JH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>P 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.P.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>P 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.P.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>P 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.P.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EY 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EY.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EY 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EY.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EY 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EY.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>N 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.N.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>N 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.N.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>N 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.N.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>R 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.R.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>R 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.R.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>R 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.R.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UW 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UW.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UW 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UW.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UW 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UW.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Z 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Z.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Z 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Z.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Z 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Z.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>S 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.S.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>S 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.S.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>S 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.S.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>T 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.T.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>T 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.T.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>T 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.T.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IY 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IY.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IY 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IY.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IY 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IY.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AE 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AE.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AE 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AE.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AE 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AE.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OW 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OW.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OW 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OW.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OW 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OW.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AY 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AY.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AY 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AY.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AY 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AY.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>CH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.CH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>CH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.CH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>CH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.CH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>NG 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.NG.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>NG 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.NG.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>NG 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.NG.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>SH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.SH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>SH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.SH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>SH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.SH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AO 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AO.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AO 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AO.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AO 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AO.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>K 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.K.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>K 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.K.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>K 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.K.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>B 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.B.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>B 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.B.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>B 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.B.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AW 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AW.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AW 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AW.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AW 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AW.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Y 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Y.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Y 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Y.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Y 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Y.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ER 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ER.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ER 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ER.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ER 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ER.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>W 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.W.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>W 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.W.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>W 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.W.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OY 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OY.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OY 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OY.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OY 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OY.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>D 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.D.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>D 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.D.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>D 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.D.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>G 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.G.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>G 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.G.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>G 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.G.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>HH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.HH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>HH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.HH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>HH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.HH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>L 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.L.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>L 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.L.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>L 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.L.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ZH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ZH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ZH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ZH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ZH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ZH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>TH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.TH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>TH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.TH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>TH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.TH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>DH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.DH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>DH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.DH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>DH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.DH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>V 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.V.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>V 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.V.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>V 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.V.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Skipping SIL</p>
+<hr>
+<h3>MODULE: 45 Prune Trees	(2019-11-22 22:38)</h3>
+<p class='result'>mk_mdef_gen <a href="file:///home/an/speech_recognition/words/test1/logdir/45.prunetree/1157.build.alltriphones.mdef.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 1: Tree Pruning</p>
+<p class='result'>prunetree <a href="file:///home/an/speech_recognition/words/test1/logdir/45.prunetree/1157.prunetree.200.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 2: State Tying</p>
+<p class='result'>tiestate <a href="file:///home/an/speech_recognition/words/test1/logdir/45.prunetree/1157.tiestate.200.log">Log File</a></p><span class='status completed'>completed</span>
+<hr>
+<h3>MODULE: 50 Training Context dependent models	(2019-11-22 22:38)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Copy CI to CD initialize</p>
+<p class='result'>init_mixw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.copy.ci.2.cd.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -146.372320966814</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.668285336671</p>
+<p class='result'>Convergence Ratio = 0.704035630143323</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.3-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.532836463583</p>
+<p class='result'>Convergence Ratio = 0.135448873088109</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.4-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.463955301126</p>
+<p class='result'>Split Gaussians, increase by 1</p>
+<p class='result'>inc_comp <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.split_gaussians.1.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.463955301126</p>
+<p class='result'>Convergence Ratio = 0.0688811624574157</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.762689096702</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.301043516029</p>
+<p class='result'>Convergence Ratio = 0.461645580673121</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.3-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.963727314179</p>
+<p class='result'>Convergence Ratio = 0.337316201849575</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.673708282457</p>
+<p class='result'>Convergence Ratio = 0.290019031722238</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 5 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.536529484419</p>
+<p class='result'>Convergence Ratio = 0.137178798037866</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 6 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.455481381698</p>
+<p class='result'>Split Gaussians, increase by 2</p>
+<p class='result'>inc_comp <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.split_gaussians.2.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.455481381698</p>
+<p class='result'>Convergence Ratio = 0.0810481027205014</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.739597520794</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.298833161063</p>
+<p class='result'>Convergence Ratio = 0.440764359731418</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.047330300871</p>
+<p class='result'>Convergence Ratio = 0.251502860192431</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.4-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.781105665793</p>
+<p class='result'>Convergence Ratio = 0.266224635078231</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 5 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.5-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.600059403473</p>
+<p class='result'>Convergence Ratio = 0.18104626232028</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 6 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.6-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.485431596827</p>
+<p class='result'>Convergence Ratio = 0.114627806646467</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 7 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.7-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.412445923064</p>
+<p class='result'>Split Gaussians, increase by 4</p>
+<p class='result'>inc_comp <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.split_gaussians.4.4.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.412445923064</p>
+<p class='result'>Convergence Ratio = 0.0729856737634407</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.697075125244</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.271399989104</p>
+<p class='result'>Convergence Ratio = 0.425675136139603</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.3-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.06266693234</p>
+<p class='result'>Convergence Ratio = 0.208733056763521</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.4-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -142.858411524274</p>
+<p class='result'>Convergence Ratio = 0.204255408066274</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 5 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.5-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -142.723708925969</p>
+<p class='result'>Convergence Ratio = 0.134702598305211</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 6 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.6-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -142.639902267854</p>
+<p>Training for 8 Gaussian(s) completed after 6 iterations</p>
+<hr>
+<h3>MODULE: 60 Lattice Generation	(2019-11-22 22:43)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 61 Lattice Pruning	(2019-11-22 22:43)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 62 Lattice Format Conversion	(2019-11-22 22:43)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 65 MMIE Training	(2019-11-22 22:43)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 90 deleted interpolation	(2019-11-22 22:43)</h3>
+<p>Skipped for continuous models</p>
+<hr>
+<h3>MODULE: DECODE Decoding using models previously trained	(2019-11-22 22:43)</h3>
+<p class='result'>Decoding 18633 segments starting at 0 (part 1 of 1) </p>
+<p class='result'>pocketsphinx_batch <a href="file:///home/an/speech_recognition/words/test1/logdir/decode/1157-1-1.log">Log File</a></p><p class='error'>ERROR: FATAL: "batch.c", line 913: PocketSphinx decoder init failed</p>
+<p class='error'>ERROR: This step had 3 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status FAILED'>FAILED</span>
+<p class='error'>ERROR: Failed to start pocketsphinx_batch</p>
+<p>        Aligning results to find error rate</p>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2019-11-22 23:02)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///home/an/speech_recognition/words/test1/logdir/000.comp_feat/1157.train-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///home/an/speech_recognition/words/test1/logdir/000.comp_feat/1157.test-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2019-11-22 23:03)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 6282 words using 40 phones</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 3.72219444444444</p>
+<p class='result'>This is a small amount of data, no comment at this time</p>
+<span class='status WARNING'>WARNING</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 6279</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<span class='status passed'>passed</span>
+<hr>
+<h3>MODULE: 0000 train grapheme-to-phoneme model	(2019-11-22 23:03)</h3>
+<p>Skipped (set $CFG_G2P_MODEL = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 01 Train LDA transformation	(2019-11-22 23:03)</h3>
+<p>Skipped (set $CFG_LDA_MLLT = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 02 Train MLLT transformation	(2019-11-22 23:03)</h3>
+<p>Skipped (set $CFG_LDA_MLLT = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 05 Vector Quantization	(2019-11-22 23:03)</h3>
+<p>Skipped for continuous models</p>
+<hr>
+<h3>MODULE: 10 Training Context Independent models for forced alignment and VTLN	(2019-11-22 23:03)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 11 Force-aligning transcripts	(2019-11-22 23:03)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 12 Force-aligning data for VTLN	(2019-11-22 23:03)</h3>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 20 Training Context Independent models	(2019-11-22 23:03)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...</span>
+<span class='progress'>models...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Flat initialize</p>
+<p class='result'>mk_mdef_gen <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.make_ci_mdef_fromphonelist.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>mk_flat <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.makeflat_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_gau <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.initmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.normmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_gau <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.initvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.normvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>cp_parm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.cpmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>cp_parm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.cpvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -152.378638929126</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -149.543541029068</p>
+<p class='result'>Convergence Ratio = 2.83509790005786</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.3-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -147.040759289815</p>
+<p class='result'>Convergence Ratio = 2.50278173925292</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.4-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -146.556128445831</p>
+<p class='result'>Convergence Ratio = 0.48463084398449</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.5-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -146.445232013099</p>
+<p class='result'>Convergence Ratio = 0.110896432732403</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.6-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/20.ci_hmm/1157.1.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -146.398664466649</p>
+<p class='result'>Training completed after 6 iterations</p>
+<hr>
+<h3>MODULE: 30 Training Context Dependent models	(2019-11-22 23:04)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Initialization</p>
+<p class='result'>mk_mdef_gen <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.make_alltriphonelist.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_mixw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.copycitocd.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for iteration: 1 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -146.372320966814</p>
+<p class='result'>Baum welch starting for iteration: 2 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.486452802167</p>
+<p class='result'>Convergence Ratio = 1.88586816464672</p>
+<p class='result'>Baum welch starting for iteration: 3 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.863815305852</p>
+<p class='result'>Convergence Ratio = 0.622637496314894</p>
+<p class='result'>Baum welch starting for iteration: 4 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.713062849595</p>
+<p class='result'>Convergence Ratio = 0.150752456257436</p>
+<p class='result'>Baum welch starting for iteration: 5 (1 of 1) </p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/30.cd_hmm_untied/1157.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.628208620503</p>
+<p class='result'>Training completed after 5 iterations</p>
+<hr>
+<h3>MODULE: 40 Build Trees	(2019-11-22 23:05)</h3>
+<p class='phase'>Phase 1: Cleaning up old log files...</p>
+<p class='phase'>Phase 2: Make Questions</p>
+<p class='result'>make_quests <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.make_questions.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Tree building</p>
+<p class='result'>Processing each phone with each state</p>
+<p class='result'>AA 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AA.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AA 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AA.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AA 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AA.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>F 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.F.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>F 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.F.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>F 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.F.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>M 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.M.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>M 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.M.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>M 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.M.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>JH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.JH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>JH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.JH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>JH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.JH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>P 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.P.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>P 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.P.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>P 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.P.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EY 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EY.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EY 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EY.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EY 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EY.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>N 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.N.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>N 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.N.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>N 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.N.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>R 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.R.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>R 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.R.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>R 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.R.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UW 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UW.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UW 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UW.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UW 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UW.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Z 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Z.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Z 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Z.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Z 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Z.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>S 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.S.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>S 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.S.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>S 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.S.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>T 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.T.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>T 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.T.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>T 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.T.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IY 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IY.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IY 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IY.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IY 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IY.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AE 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AE.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AE 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AE.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AE 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AE.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OW 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OW.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OW 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OW.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OW 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OW.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AY 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AY.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AY 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AY.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AY 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AY.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>CH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.CH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>CH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.CH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>CH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.CH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>EH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.EH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>NG 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.NG.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>NG 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.NG.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>NG 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.NG.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>SH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.SH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>SH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.SH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>SH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.SH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AO 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AO.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AO 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AO.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AO 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AO.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>K 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.K.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>K 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.K.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>K 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.K.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>B 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.B.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>B 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.B.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>B 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.B.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AW 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AW.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AW 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AW.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>AW 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.AW.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>IH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.IH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Y 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Y.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Y 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Y.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Y 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.Y.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ER 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ER.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ER 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ER.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ER 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ER.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>UH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.UH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>W 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.W.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>W 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.W.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>W 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.W.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OY 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OY.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OY 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OY.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>OY 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.OY.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>D 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.D.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>D 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.D.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>D 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.D.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>G 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.G.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>G 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.G.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>G 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.G.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>HH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.HH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>HH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.HH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>HH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.HH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>L 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.L.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>L 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.L.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>L 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.L.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ZH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ZH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ZH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ZH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ZH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.ZH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>TH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.TH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>TH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.TH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>TH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.TH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>DH 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.DH.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>DH 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.DH.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>DH 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.DH.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>V 0 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.V.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>V 1 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.V.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>V 2 </p>
+<p class='result'>bldtree <a href="file:///home/an/speech_recognition/words/test1/logdir/40.buildtrees/1157.buildtree.V.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Skipping SIL</p>
+<hr>
+<h3>MODULE: 45 Prune Trees	(2019-11-22 23:06)</h3>
+<p class='result'>mk_mdef_gen <a href="file:///home/an/speech_recognition/words/test1/logdir/45.prunetree/1157.build.alltriphones.mdef.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 1: Tree Pruning</p>
+<p class='result'>prunetree <a href="file:///home/an/speech_recognition/words/test1/logdir/45.prunetree/1157.prunetree.200.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 2: State Tying</p>
+<p class='result'>tiestate <a href="file:///home/an/speech_recognition/words/test1/logdir/45.prunetree/1157.tiestate.200.log">Log File</a></p><span class='status completed'>completed</span>
+<hr>
+<h3>MODULE: 50 Training Context dependent models	(2019-11-22 23:06)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Copy CI to CD initialize</p>
+<p class='result'>init_mixw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.copy.ci.2.cd.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -146.372320966814</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.668285336671</p>
+<p class='result'>Convergence Ratio = 0.704035630143323</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.3-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.532836463583</p>
+<p class='result'>Convergence Ratio = 0.135448873088109</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.4-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.1.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.463955301126</p>
+<p class='result'>Split Gaussians, increase by 1</p>
+<p class='result'>inc_comp <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.split_gaussians.1.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.463955301126</p>
+<p class='result'>Convergence Ratio = 0.0688811624574157</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.762689096702</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.301043516029</p>
+<p class='result'>Convergence Ratio = 0.461645580673121</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.3-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.963727314179</p>
+<p class='result'>Convergence Ratio = 0.337316201849575</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.4-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.673708282457</p>
+<p class='result'>Convergence Ratio = 0.290019031722238</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 5 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.5-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.536529484419</p>
+<p class='result'>Convergence Ratio = 0.137178798037866</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 6 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.6-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.2.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.455481381698</p>
+<p class='result'>Split Gaussians, increase by 2</p>
+<p class='result'>inc_comp <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.split_gaussians.2.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.455481381698</p>
+<p class='result'>Convergence Ratio = 0.0810481027205014</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.1-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.739597520794</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.2-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.298833161063</p>
+<p class='result'>Convergence Ratio = 0.440764359731418</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.047330300871</p>
+<p class='result'>Convergence Ratio = 0.251502860192431</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.4-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.781105665793</p>
+<p class='result'>Convergence Ratio = 0.266224635078231</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 5 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.5-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.600059403473</p>
+<p class='result'>Convergence Ratio = 0.18104626232028</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 6 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.6-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.485431596827</p>
+<p class='result'>Convergence Ratio = 0.114627806646467</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 7 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.7-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.4.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.412445923064</p>
+<p class='result'>Split Gaussians, increase by 4</p>
+<p class='result'>inc_comp <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.split_gaussians.4.4.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.412445923064</p>
+<p class='result'>Convergence Ratio = 0.0729856737634407</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 1 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.1-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.697075125244</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 2 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.271399989104</p>
+<p class='result'>Convergence Ratio = 0.425675136139603</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 3 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.3-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.06266693234</p>
+<p class='result'>Convergence Ratio = 0.208733056763521</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 4 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.4-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -142.858411524274</p>
+<p class='result'>Convergence Ratio = 0.204255408066274</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 5 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.5-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -142.723708925969</p>
+<p class='result'>Convergence Ratio = 0.134702598305211</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 6 (1 of 1)</p>
+<p class='result'>bw <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.6-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/an/speech_recognition/words/test1/logdir/50.cd_hmm_tied/1157.8.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -142.639902267854</p>
+<p>Training for 8 Gaussian(s) completed after 6 iterations</p>
+<hr>
+<h3>MODULE: 60 Lattice Generation	(2019-11-22 23:12)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 61 Lattice Pruning	(2019-11-22 23:12)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 62 Lattice Format Conversion	(2019-11-22 23:12)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 65 MMIE Training	(2019-11-22 23:12)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 90 deleted interpolation	(2019-11-22 23:12)</h3>
+<p>Skipped for continuous models</p>
+<hr>
+<h3>MODULE: DECODE Decoding using models previously trained	(2019-11-22 23:12)</h3>
+<p class='result'>Decoding 18633 segments starting at 0 (part 1 of 1) </p>
+<p class='result'>pocketsphinx_batch <a href="file:///home/an/speech_recognition/words/test1/logdir/decode/1157-1-1.log">Log File</a></p><p>        Aligning results to find error rate</p>

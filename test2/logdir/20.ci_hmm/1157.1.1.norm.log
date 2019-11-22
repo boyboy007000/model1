@@ -1,0 +1,32 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-accumdir		/home/an/speech_recognition/words/test1/bwaccumdir/1157_buff_1,
+-constE		3.0	3.000000e+00
+-dcountfn		
+-example	no	no
+-fullvar	no	no
+-help		no	no
+-inmeanfn		
+-inmixwfn		
+-invarfn		
+-meanfn			/home/an/speech_recognition/words/test1/model_parameters/1157.ci_cont/means
+-mixwfn			/home/an/speech_recognition/words/test1/model_parameters/1157.ci_cont/mixture_weights
+-mmie		no	no
+-oaccumdir		
+-regmatfn		
+-tiedvar	no	no
+-tmatfn			/home/an/speech_recognition/words/test1/model_parameters/1157.ci_cont/transition_matrices
+-varfn			/home/an/speech_recognition/words/test1/model_parameters/1157.ci_cont/variances
+
+INFO: main.c(207): Reading and accumulating counts from /home/an/speech_recognition/words/test1/bwaccumdir/1157_buff_1
+INFO: s3mixw_io.c(117): Read /home/an/speech_recognition/words/test1/bwaccumdir/1157_buff_1/mixw_counts [120x1x1 array]
+INFO: s3tmat_io.c(118): Read /home/an/speech_recognition/words/test1/bwaccumdir/1157_buff_1/tmat_counts [40x3x4 array]
+INFO: s3gau_io.c(386): Read /home/an/speech_recognition/words/test1/bwaccumdir/1157_buff_1/gauden_counts with means with vars [120x1x1 vector arrays]
+INFO: main.c(391): Normalizing mean for n_mgau= 120, n_stream= 1, n_density= 1
+INFO: main.c(414): Normalizing var
+INFO: s3mixw_io.c(233): Wrote /home/an/speech_recognition/words/test1/model_parameters/1157.ci_cont/mixture_weights [120x1x1 array]
+INFO: s3tmat_io.c(176): Wrote /home/an/speech_recognition/words/test1/model_parameters/1157.ci_cont/transition_matrices [40x3x4 array]
+INFO: s3gau_io.c(228): Wrote /home/an/speech_recognition/words/test1/model_parameters/1157.ci_cont/means [120x1x1 array]
+INFO: s3gau_io.c(228): Wrote /home/an/speech_recognition/words/test1/model_parameters/1157.ci_cont/variances [120x1x1 array]
+Fri Nov 22 23:03:56 2019
+Current Overall Likelihood Per Frame = -152.378638929126
