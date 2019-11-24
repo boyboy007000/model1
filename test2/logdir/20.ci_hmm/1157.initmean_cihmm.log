@@ -18668,4 +18668,4 @@ INFO: cmn.c(133): CMN: 65.56 11.03 -2.17 12.51 -10.69 13.47 -8.34  1.23 -6.84 -7
 INFO: cmn.c(133): CMN: 54.61  8.06 -8.77  7.75 -8.64 -1.98 10.19  2.88 17.66 -18.11  4.47 -12.32 -11.74 
 INFO: cmn.c(133): CMN: 61.62 -0.57  4.63 12.02 -3.97  0.78 -4.37  6.94 -4.05 -5.68 -6.25 -3.82 -19.35 
 INFO: s3gau_io.c(485): Wrote /home/an/speech_recognition/words/test1/bwaccumdir/1157_buff_1/gauden_counts with means [1x1x1 vector arrays]
-Fri Nov 22 23:03:40 2019
+Sat Nov 23 21:54:58 2019

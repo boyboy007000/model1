@@ -2852,4 +2852,4 @@ INFO: s3gau_io.c(228): Wrote /home/an/speech_recognition/words/test1/model_param
 INFO: main.c(561): Writing dest /home/an/speech_recognition/words/test1/model_parameters/1157.cd_cont_untied/variances
 INFO: s3gau_io.c(228): Wrote /home/an/speech_recognition/words/test1/model_parameters/1157.cd_cont_untied/variances [8268x1x1 array]
 [mx  8265(0) +=   117] [mg  8265(0) <-   117] [mx  8266(1) +=   118] [mg  8266(1) <-   118] [mx  8267(2) +=   119] [mg  8267(2) <-   119] 
-Fri Nov 22 23:04:46 2019
+Sat Nov 23 17:49:37 2019

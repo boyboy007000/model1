@@ -35,4 +35,4 @@ INFO: main.c(1110):  21 questions from state 1
 INFO: main.c(1109): Done building questions using state 2
 INFO: main.c(1110):  21 questions from state 2
 INFO: main.c(1115): Stored questions in /home/an/speech_recognition/words/test1/model_architecture/1157.tree_questions
-Fri Nov 22 23:05:48 2019
+Sat Nov 23 17:50:19 2019

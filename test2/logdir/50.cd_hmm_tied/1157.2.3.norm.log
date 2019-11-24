@@ -29,6 +29,6 @@ INFO: s3mixw_io.c(233): Wrote /home/an/speech_recognition/words/test1/model_para
 INFO: s3tmat_io.c(176): Wrote /home/an/speech_recognition/words/test1/model_parameters/1157.cd_cont_200/transition_matrices [40x3x4 array]
 INFO: s3gau_io.c(228): Wrote /home/an/speech_recognition/words/test1/model_parameters/1157.cd_cont_200/means [320x1x2 array]
 INFO: s3gau_io.c(228): Wrote /home/an/speech_recognition/words/test1/model_parameters/1157.cd_cont_200/variances [320x1x2 array]
-Fri Nov 22 23:07:57 2019
+Sat Nov 23 17:51:57 2019
 Current Overall Likelihood Per Frame = -144.963727314179
 Convergence ratio = 0.337316201849575

@@ -37349,4 +37349,4 @@ INFO: s3mixw_io.c(233): Wrote /home/an/speech_recognition/words/test1/bwaccumdir
 INFO: s3tmat_io.c(176): Wrote /home/an/speech_recognition/words/test1/bwaccumdir/1157_buff_1/tmat_counts [40x3x4 array]
 INFO: s3gau_io.c(485): Wrote /home/an/speech_recognition/words/test1/bwaccumdir/1157_buff_1/gauden_counts with means with vars (2pass) [320x1x2 vector arrays]
 INFO: main.c(999): Counts saved to /home/an/speech_recognition/words/test1/bwaccumdir/1157_buff_1
-Fri Nov 22 23:07:56 2019
+Sat Nov 23 17:51:57 2019
